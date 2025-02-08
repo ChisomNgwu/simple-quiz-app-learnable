@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-image: url(./BG/Quiz\ Question\ Marks\ Evaluate\ Test\ Knowledge\ Stock\ Illustration\ -\ Illustration\ of\ internet\,\ answer_\ 35557093.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quiz-container {
+
+    width: 320px;
+    height: 370px;
+    background-color: teal;
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255);
+}
+
+.quiz-container h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+#progress {
+    font-size: 14px;
+}
+
+ .quiz-container p{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'poppins', sans-serif;
+}
+
+.btn-container button {
+
+    width: 100%;
+    max-width: 230px;
+    margin: 3px 0;
+    padding: 8px;
+    color: teal;
+    font-size: medium;
+    text-align: left;
+    border: none;
+    border-radius: 10px;
+}
+
+.select {
+    background-color: inherit;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    color: turquoise;
+    border: none;
+}
+
+.buttonRestart {
+    background-color: red;
+    padding: 10px;
+    margin-top: 20px;
+    width: 150px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* mobile screens */
+
+@media screen and (max-width: 424px) {
+    body {
+        background-image: url(./BG/Free\ Vector\ _\ Question\ mark\ sign\ blank\ background\ solve\ problem\ or\ puzzle\ vector.jpeg);
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .quiz-container {
+    
+        width: 200px;
+        height: 320px;
+        background-color: rgb(31, 31, 161);
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px  rgb(0, 0, 0);
+    }
+    
+    .quiz-container h1 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    
+    #progress {
+        font-size: 12px;
+    }
+    
+    .quiz-container p {
+    font-size: 14px;
+    font-weight: normal;
+    }
+    
+    .btn-container button {
+        width: 100%;
+        max-width: 220px;
+        margin: 3px 0;
+        padding: 6px;
+        color: blue;
+        font-size: small;
+    }
+    
+    .select {
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 10px;
+    }
+    
+    .buttonRestart {
+        background-color: red;
+        padding: 8px;
+        margin-top: 15px;
+        width: 130px;
+        font-weight: medium;
+        color: white;
+    }
+}
+
