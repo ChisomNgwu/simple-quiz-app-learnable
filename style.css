@@ -53,6 +53,13 @@ body {
     text-align: left;
     border: none;
     border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn-container button.selected {
+    background-color: green;
+    color: white;
 }
 
 .select {
@@ -90,7 +97,7 @@ body {
     
     .quiz-container {
     
-        width: 230px;
+        width: 250px;
         height: 350px;
         background-color: rgb(31, 31, 161);
         border-radius: 15px;
@@ -100,22 +107,22 @@ body {
     .quiz-container h1 {
         font-size: 25px;
         font-weight: 500;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     
     #progress {
-        font-size: 10px;
+        font-size: 13px;
     }
     
     .quiz-container p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     }
     
     .btn-container button {
         width: 100%;
         max-width: 220px;
-        margin: 3px 0;
+        margin: 5px 0;
         padding: 6px;
         color: blue;
         font-size: small;
@@ -123,11 +130,10 @@ body {
     
     .select {
         font-family: 'Courier New', Courier, monospace;
-        margin-top: 10px;
+        margin-top: 30px;
     }
     
     .buttonRestart {
-        background-color: red;
         padding: 8px;
         margin-top: 15px;
         width: 130px;

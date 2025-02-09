@@ -88,25 +88,31 @@ function showQuestion() {
         button.classList.add("btn");
         button.addEventListener("click", () => selectAnswer(button, currentQuestion.correctAnswer));
         answerButtons.appendChild(button);
+        button.forEach
     });
 }
 
 // function to reset the state of the page
 function resetState() {
     answerButtons.innerHTML = "";
+    nextButton.classList.add("hide");
 }
 // function to handle the user's answer selection and check if it's correct
 function selectAnswer(button, correctAnswer) {
-    if (button.innerText === correctAnswer) {
-        score++;
-    }
-    currentQuestionIndex++;
-    
-    if (currentQuestionIndex < questions.length) {
-        showQuestion();
-    } else {
-        showResults();
-    }
+    button.classList.add("selected");
+    setTimeout(() => {
+        if (button.innerText === correctAnswer) {
+            score++;
+        }
+        currentQuestionIndex++;
+        
+        if (currentQuestionIndex < questions.length) {
+            showQuestion();
+        } else {
+            showResults();
+        }
+
+    }, 500);
 }
 
 // function to display the quiz results and ask the user if they want to restart
