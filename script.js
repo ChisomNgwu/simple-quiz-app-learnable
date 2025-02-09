@@ -95,7 +95,6 @@ function showQuestion() {
 // function to reset the state of the page
 function resetState() {
     answerButtons.innerHTML = "";
-    nextButton.classList.add("hide");
 }
 // function to handle the user's answer selection and check if it's correct
 function selectAnswer(button, correctAnswer) {
